@@ -15,9 +15,9 @@ import store from "./redux/store";
 import Home from "./pages/home/home.page";
 import Admin from "./pages/admin/admin.page";
 
-//axios.defaults.baseURL = "http://localhost:5000/b-test-ccc3b/us-central1/api";
-axios.defaults.baseURL =
-  "https://us-central1-b-test-ccc3b.cloudfunctions.net/api";
+axios.defaults.baseURL = "http://localhost:5000/b-test-ccc3b/us-central1/api";
+/*axios.defaults.baseURL =
+  "https://us-central1-b-test-ccc3b.cloudfunctions.net/api";*/
 
 function App() {
   return (

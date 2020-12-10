@@ -1,6 +1,8 @@
 .list {
-  max-width: 30%;
+  max-width: 45%;
+  height: 80vh;
   list-style: none;
+  overflow: auto;
 }
 
 .list li {
