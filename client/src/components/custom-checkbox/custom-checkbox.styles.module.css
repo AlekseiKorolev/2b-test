@@ -1,0 +1,59 @@
+.ingredient {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dough {
+  display: flex;
+  flex-direction: row;
+}
+
+.switch {
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+}
+.switch input {
+  visibility: hidden;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 15px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #e7aa54;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #e7aa54;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+}

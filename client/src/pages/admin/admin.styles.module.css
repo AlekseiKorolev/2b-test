@@ -1,0 +1,27 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.orders {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.orders > div {
+  padding: 20px;
+  min-width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+.logout {
+  text-align: right;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.logout:hover {
+  color: darkblue;
+}

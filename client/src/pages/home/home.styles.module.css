@@ -1,0 +1,23 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title {
+  font-size: 2rem;
+}
+.subtitle {
+  margin-top: 30px;
+  font-size: 1.4rem;
+}
+.subContainer {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.error {
+  color: red;
+}

@@ -1,0 +1,17 @@
+.title {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ingredients {
+  display: flex;
+  flex-direction: column;
+}
+.consumerData {
+  display: flex;
+  flex-direction: column;
+}

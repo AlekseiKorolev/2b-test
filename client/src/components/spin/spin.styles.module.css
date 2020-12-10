@@ -1,0 +1,26 @@
+.ring {
+  position: absolute;
+  top: 26%;
+  left: 30%;
+  width: 40px;
+  height: 40px;
+}
+.ring:after {
+  z-index: 2;
+  content: " ";
+  display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  border-color: gray transparent gray transparent;
+  animation: ring 1.2s linear infinite;
+}
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

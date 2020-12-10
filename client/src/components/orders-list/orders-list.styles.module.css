@@ -1,0 +1,23 @@
+.list {
+  max-width: 30%;
+  list-style: none;
+}
+
+.list li {
+  padding: 5px;
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.list li:hover {
+  background-color: #eee;
+}
+
+.list .same {
+  background-color: white;
+}
+
+.list .active {
+  background-color: lightgray;
+}
