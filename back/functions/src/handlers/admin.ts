@@ -14,7 +14,23 @@ export const adminSignin = (req: any, res: any) => {
         credentials.email === admin.email &&
         credentials.password === admin.password
       ) {
-        return res.json(200)({ message: "Вход выполнене" });
+        db.collection("orders")
+          .get()
+          .then((data: any) => {
+            const orders: Array<any> = [];
+            data.forEach((el: any) => {
+              orders.push({
+                ...el.data(),
+              });
+            });
+            return res.json(orders);
+          })
+          .catch(err => {
+            console.error(err);
+            res.status(500).json({
+              message: "Что то пошло не так",
+            });
+          });
       } else {
         return res
           .status(401)

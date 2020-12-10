@@ -8,6 +8,6 @@
 
 ##### Запуск
 
-Для запуска установить зависимости с /client и /back
-Для запуска back - firebase serve
+Для запуска установить зависимости с /client, /back, /back/functions\
+Для запуска back - firebase serve\
 Для запуска client - npm start
